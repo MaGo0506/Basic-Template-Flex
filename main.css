@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgb(230,121,35);
+  background: radial-gradient(circle, rgba(230,121,35,1) 12%, rgba(226,108,31,1) 48%);
+  height: 100%;
+  width: 100%;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainNav .logo {
+  margin: 3.7% 0 0 12%;
+  display: inline-block;
+  font-size: 1.75rem;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+}
+
+.mainNav ul {
+  border: 1px black;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.mainNav .navItems li {
+  width: 12.5%;
+  display: inline-block;
+  list-style: none;
+  font-size: 0.9rem;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+  margin: 66px 30px 0 0;
+}
+
+.mainNav ul li .listItem {
+  text-decoration: none;
+}
+
+.mainHero {
+  margin: 10px;
+  padding: 50px;
+  margin-left: 8.5%;
+}
+
+.mainHero h1 {
+  padding-top: 22px;
+  color: #842f0a;
+  font-size: 3.25rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.mainHero p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  width: 73%;
+  line-height: 30px;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+}
+
+.mainHero .heroBtn {
+  text-decoration: none;
+  border: 2px solid #2b4793;
+  border-radius: 5px;
+  padding: 12px 37px 8px 37px;
+  font-size: 0.8rem;
+  background: #2b4793;
+  transition: 0.3s;
+  text-shadow: 0px 3px 1px rgba(43,15,0,0.8);
+  -webkit-box-shadow: 0px 4px 0px 1px rgba(43,65,118,1);
+  -moz-box-shadow: 0px 4px 0px 1px rgba(43,65,118,1);
+  box-shadow: 0px 4px 0px 1px rgba(43,65,118,1);
+  display: inline-block;
+  margin-top: 47px;
+  margin-bottom: 10px;
+}
+
+.mainHero .heroBtn:hover {
+  background: #ddd;
+  color: #2b4793;
+}
+
+.jobMain {
+  margin-top: 44px;
+  margin-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobMain .wrapp:not(:first-child) {
+  margin-left: 2%;
+}
+
+.jobMain .wrapp .employee {
+  height: 140px;
+  width: 140px;
+  border-radius: 5px;
+  background: #3c3a3b;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(186,96,0,1);
+  -moz-box-shadow: 0px 4px 7px 0px rgba(186,96,0,1);
+  box-shadow: 0px 4px 7px 0px rgba(186,96,0,1);
+}
+
+.jobMain .wrapp .job {
+  font-size: 0.71rem;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+  margin-top: 13px;
+}
+
+.mainSkill {
+  padding: 40px 40px 40px 70px;
+  margin-top: 79px;
+  background-color: #f8f8f8;
+  border-top: 10px solid #e7e7e7;
+  border-bottom: 10px solid #e7e7e7;
+  height: 585px;
+  position: relative;
+}
+
+.imgWrapp  .webImageA {
+  position: absolute;
+  top: 20%;
+  object-fit: cover;
+  object-position: 0 0;
+  height: 500px;
+  width: 50%;
+  right: 0;
+}
+
+.webImageB {
+  display: block;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 16.6%;
+}
+
+.mainSkill .imgWrapp::after {
+  -webkit-box-shadow: inset -200px 0px 248px -24px rgba(255,255,255,1);
+  -moz-box-shadow: inset -200px 0px 248px -24px rgba(255,255,255,1);
+  box-shadow: inset -200px 0px 248px -24px rgba(255,255,255,1);
+  content: '';
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 50%;
+}
+
+.mainSkill .skillSection {
+  margin-left: 7.75%;
+}
+
+.mainSkill .skillSection .skillList {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  padding-bottom: 18px;
+}
+
+.mainSkill .skillSection .skillList li {
+  margin-top: 15px;
+  color: #95979b;
+  display: inline-block;
+  font-size: 0.74rem;
+}
+
+.mainSkill .skillSection .skillList li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.mainSkill .skillSection .skillList #list1 {
+  color: #2d478a;
+}
+
+.mainSkill .skillSection .skillTitle {
+  color: #2d478a;
+  margin: 29px 0 24px 0;
+  font-size: 2.3rem;
+}
+
+.mainSkill .skillSection .skillText1,.mainSkill .skillSection .skillText2 {
+  color: #575757;
+  font-size: 0.75rem;
+  width: 450px;
+  line-height: 25px;
+}
+
+.mainSkill .skillSection .skillText1 {
+  margin-bottom: 29px;
+}
+
+.mainSkill .skillSection .skillText2 {
+  margin-bottom: 41px;
+}
+
+.mainSkill .skillSection .skillBtn {
+  text-decoration: none;
+  border: 1px solid #d84414;
+  padding: 12px 34px 10px 35px;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  background: #d84414;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(173,0,14,1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(173,0,14,1);
+  box-shadow: 0px 5px 0px 0px rgba(173,0,14,1);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.mainSkill .skillSection .skillBtn:hover {
+  background: #fff;
+  color: #d84414;
+}
+
+.businessMain {
+  background: #fff;
+  border-bottom: 10px solid #e7e7e7;
+  position: relative;
+  padding: 45px 40px 40px 70px;
+}
+
+.businessMain .businessUp {
+  display: flex;
+}
+
+.businessMain .businessUp p {
+  color:#2d478a;
+  font-size: 1.76rem;
+  float: left;
+  font-weight: lighter;
+  margin: 13px 0 0 102px;
+}
+
+.businessMain .businessUp a {
+  display: inline-block;
+  margin-left: 15%;
+  color: #e57521;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f5f5f5;
+  font-weight: bold;
+  padding: 14px 40px 14px 37px;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(219,210,211,1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(219,210,211,1);
+  box-shadow: 0px 5px 0px 0px rgba(219,210,211,1);
+  transition: 0.3s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.businessMain .businessUp a:hover {
+  background: #e57521;
+  color: #ddd;
+}
+
+.businessMain .businessDown {
+  margin-bottom: 3%;
+}
+
+.businessMain .businessDown img {
+  margin-top: 3.8%;
+  border-top: 1px solid #ddd;
+  padding-top: 50px;
+  height: auto;
+  width: 960px;
+  margin-left: 80px;
+}
+
+.businessMain .businessDown p {
+  color: #575757;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-right: 21.3%;
+  margin-top: 10px;
+}
+
+.contactMain {
+  margin: 5% 0 10% 0;
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contactMain .contactLeft span {
+  font-size: 0.7rem;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+}
+
+.contactMain .contactLeft span:not(:first-child) {
+  margin-left: 8%;
+}
+
+.contactMain .contactLeft h3 {
+  color: #842f0a;
+  font-size: 1.1rem;
+  margin-top: 26px;
+  text-align: left;
+}
+
+.contactMain .contactRight span {
+  font-size: 0.7rem;
+  text-align: right;
+  text-shadow: 0px 3px 1px rgba(209,72,0,0.8);
+}
+
+.contactMain .contactRight p,.contactMain .contactRight p strong {
+  color: #842f0a;
+  font-size: 1.65rem;
+  margin-top: 15px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.contactMain .contactRight p {
+  font-size: 1.65rem;
+}
+
+
+/*Tablets*/
+@media screen and (max-width:1200px) {
+
+  .mainNav {
+    text-align: center;
+  }
+
+  .mainNav .logo {
+    margin: 25px 0 0 60px;
+    font-size: 2rem;
+    height: 10%;
+  }
+
+  .mainNav .navItems {
+    padding-bottom: 20px;
+    width: 85%;
+    margin-top: 25px;
+    margin-right: 10%;
+  }
+
+  .mainNav .navItems li {
+    font-size: 1.2rem;
+    padding-left: 10%;
+    margin-top: 20px;
+  }
+
+  .mainHero {
+    margin-left: 0;
+  }
+
+  .mainHero .heroTitle {
+    font-weight: bold;
+  }
+
+  .mainHero .heroP {
+    font-size: 1.3rem;
+    width: 100%
+  }
+
+  .mainHero .heroBtn {
+    font-size: 1.3rem;
+  }
+
+  .jobMain {
+    text-align: center;
+    width: 70%;
+  }
+
+  .jobMain .wrapp {
+    margin-left: 10px;
+  }
+
+  .jobMain .wrapp .employee {
+    height: 200px;
+    width: 200px;
+  }
+
+  .jobMain .wrapp .job {
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mainSkill .skillSection {
+    margin-left: 0;
+  }
+
+  .mainSkill .skillSection .skillList li {
+    font-size:1.1rem;
+    margin-left: 5px;
+  }
+
+  .mainSkill .skillSection .skillText1,.mainSkill .skillSection .skillText2 {
+    display: block;
+    width: 95%;
+    font-size: 1.2rem;
+  }
+
+  .mainSkill .skillSection .skillBtn {
+    font-size: 1.3rem;
+  }
+
+  .mainSkill .imgWrapp .webImageA, .imgWrapp, .webImageB {
+    display: none;
+  }
+
+  div.businessMain {
+    text-align: left;
+    padding: 50px 0 50px 0;
+    float: none;
+  }
+
+  .businessMain .businessUp {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .businessMain .businessUp p {
+    float: none;
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .businessMain .businessUp a {
+    font-size: 1.3rem;
+    margin: 20px 30px 20px 50px;
+    text-align: center;
+  }
+
+  .businessMain .businessDown .logoImage {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .businessMain .businessDown p {
+    text-align: right;
+    font-size: 1.3rem;
+    margin: 0 10px 0 130px;
+  }
+
+  .contactMain .contactLeft, .contactMain .contactRight {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .contactMain .contactLeft {
+    margin: 0 0 30px 10px;
+  }
+
+  .contactMain .contactLeft span {
+    font-size: 0.95rem;
+  }
+
+  .contactMain .contactLeft h3 {
+    font-size: 1.12rem;
+  }
+
+  .contactMain .contactRight {
+    margin-left: 10%;
+  }
+
+  .contactMain .contactRight span {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .contactMain .contactRight p, .contactMain .contactRight p strong {
+    text-align: right;
+    font-size: 2rem;
+  }
+}
+
+
+/*Smaller Devices*/
+@media screen and (max-width:767px) {
+
+  .mainNav {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .mainNav .navItems {
+    width: 98%;
+    margin-left: -42px;
+  }
+
+  .mainNav .navItems li {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  .mainNav .navItems li:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .mainNav .logo {
+    margin: 35px 0 0 0;
+    font-size: 2.5rem;
+  }
+
+  .mainHero {
+    margin: 40px 0 0 5%;
+    padding: 5px;
+  }
+
+  .mainHero .heroTitle {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .mainHero .heroP {
+    font-size: 1.3rem;
+    width: 90%
+  }
+
+  .mainHero .heroBtn {
+    font-size: 1.3rem;
+  }
+
+  .jobMain {
+    text-align: center;
+  }
+
+  .jobMain .wrapp {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  .jobMain .wrapp .employee {
+    height: 120px;
+    width: 120px;
+  }
+
+  .mainSkill {
+    margin-left: -40px;
+    height: 700px;
+  }
+
+  .mainSkill .skillSection ul.skillList li {
+    font-size:1.3rem;
+    margin-left: 0.6%;
+    width: 40%;
+  }
+
+  .mainSkill .skillSection .skillText1,.mainSkill .skillSection .skillText2 {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .mainSkill .skillSection .skillBtn {
+    font-size: 1.3rem;
+  }
+
+  .businessMain {
+    padding: 50px 0 50px 0;
+    float: none;
+  }
+
+  .businessMain .businessUp {
+    text-align: center;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .businessMain .businessUp p {
+    float: none;
+    padding-bottom: 30px;
+  }
+
+  .businessMain .businessUp a {
+    font-size: 1.3rem;
+    margin:  20px;
+  }
+
+  .businessMain .businessDown .logoImage {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .businessMain .businessDown p {
+    text-align: right;
+    margin:0 10px o 130px;
+    font-size: 1.3rem;
+  }
+
+  .contactMain {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .contactMain .contactLeft, .contactMain .contactRight {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contactMain .contactLeft {
+    margin: 0 0 30px 10px;
+  }
+
+  .contactMain .contactLeft span {
+    font-size: 1.1rem;
+  }
+
+  .contactMain .contactLeft h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .contactMain div.contactRight {
+    margin-left: 20px;
+    float: none;
+  }
+
+  .contactMain .contactRight span {
+    font-size: 1.2rem;
+  }
+
+  .contactMain .contactRight p, .contactMain .contactRight p strong {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
