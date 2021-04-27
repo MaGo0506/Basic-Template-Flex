@@ -39,9 +39,13 @@ body {
 .mainNav ul {
   border: 1px black;
   text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  width: 35%;
 }
 
 .mainNav .navItems li {
