@@ -20,6 +20,10 @@ body {
 }
 
 .mainNav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   margin-right: 7%;
@@ -100,6 +104,10 @@ body {
 .jobMain {
   margin-top: 44px;
   margin-left: 12%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
 }
@@ -240,6 +248,10 @@ body {
 }
 
 .businessMain .businessUp {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -299,6 +311,10 @@ body {
 .contactMain {
   margin: 5% 10% 6% 0;
   padding-bottom: 1%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
 }
